@@ -163,7 +163,7 @@ async function main() {
         }
     })
 
-    // Add an event to volume - add input insted of change to make it live volume changer
+    // Add an event to volume - add "input" insted of "change" to make it live volume changer
     document.querySelector(".range input").addEventListener("input", (e) => {
         // console.log("Setting volume to", e.target.value, "/ 100")
         currentSong.volume = parseInt(e.target.value) / 100
