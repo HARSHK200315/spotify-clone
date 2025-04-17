@@ -71,7 +71,7 @@ async function displayAlbums(folder) {
 
     for (let album of albums) {
         cardContainer.innerHTML += `
-            <div data-folder="${album}" class="card">
+            <div data-folder="${album.folder}" class="card">
                 <div class="play">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -79,12 +79,12 @@ async function displayAlbums(folder) {
                             stroke-linejoin="round" />
                     </svg>
                 </div>
-                <img src="/songs/${album}/cover.jpeg" alt="">
+                <img src="/songs/${album.folder}/cover.jpeg" alt="">
                 <h2>${album.title}</h2>
                 <p>${album.description}</p>
             </div>`;
 
-            console.log("Loaded albums:", albums);
+            console.log("Loaded albums:", album.folder);
 
     }
 
