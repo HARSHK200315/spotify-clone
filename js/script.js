@@ -18,12 +18,12 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/songs/${folder}/`)
-    let response = await a.text();
+    let a = await fetch(`/songs/${folder}/info.json`)
+    let response = await a.json();
     let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
-    songs = []
+    songs = response.songs;
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".mp3")) {

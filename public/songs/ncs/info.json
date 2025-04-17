@@ -1,4 +1,11 @@
 {
-    "title":"non-Copyright songs",
-    "description": "songs for you"
+    "title": "NCS Playlist",
+    "description": "Non-copyrighted music collection",
+    "songs": [
+        "Infraction Cyber Attack.mp3",
+        "Infraction Las Vegas.mp3",
+        "Infraction Life Goes On - Copy.mp3",
+        "Infraction Music Train.mp3",
+        "Lonesome Journey.mp3"
+    ]
 }

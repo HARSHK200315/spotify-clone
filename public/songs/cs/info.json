@@ -1,4 +1,8 @@
 {
-    "title":"Copy right songs",
-    "description": "songs for you"
+    "title": "CS Playlist",
+    "description": "copyrighted music collection",
+    "songs": [
+        "The Travelling Symphony - Copy.mp3",
+        "The Travelling Symphony.mp3"
+    ]
 }
